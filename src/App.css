@@ -13,3 +13,121 @@ body {
   height: 100vh;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  max-width: 900px;
+  border-radius: 15px;
+}
+
+.input {
+  padding: 10px 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bill,
+.tip,
+.people {
+  margin-bottom: 20px;
+}
+
+.label_wrap {
+  color: hsl(183, 100%, 15%);
+}
+
+.input_wrap img {
+  position: absolute;
+  padding: 20px;
+}
+
+.input_wrap input {
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  font-weight: 400;
+  color: hsl(183, 100%, 15%);
+}
+
+input::placeholder {
+  color: hsl(184, 14%, 56%);
+  opacity: 1;
+}
+
+.btn_container {
+  display: grid;
+  grid-template-columns: auto auto 100px;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.tip_btn {
+  font-size: 18px;
+  padding: 10px;
+  background-color: hsl(183, 100%, 15%);
+  color:hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+}
+
+.output {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  padding: 40px;
+  width: 50%;
+}
+
+.amount {
+  margin-bottom: 100px;
+}
+
+.amount_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tipAmount {
+  margin-bottom: 40px;
+}
+
+.tipAmount > label,
+.totalAmount > label {
+  color: hsl(0, 0%, 100%);
+}
+
+.tipAmount > p,
+.totalAmount > p {
+  color: hsl(184, 14%, 56%);
+}
+
+.value {
+  color: hsl(172, 67%, 45%);
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.reset-btn {
+  width: 100%;
+  background-color: hsl(184, 14%, 56%);
+  color: hsl(186, 14%, 43%);
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}

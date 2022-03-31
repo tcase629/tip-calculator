@@ -2,8 +2,8 @@ import React from 'react'
 
 const Button = ({ value }) => {
   return (
-    <button>
-      {value}
+    <button className="tip_btn">
+      {value}%
     </button>
   )
 }

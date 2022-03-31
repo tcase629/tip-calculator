@@ -1,4 +1,5 @@
 import Button from './Button'
+import CustomButton from './CustomButton'
 
 const TipButtons = () => {
   return (
@@ -8,7 +9,7 @@ const TipButtons = () => {
       <Button value={15} />
       <Button value={25} />
       <Button value={50} />
-      <Button value={0} />
+      <CustomButton />
     </div>
   )
 }
