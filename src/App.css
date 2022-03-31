@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+.app {
+  background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+}
+
