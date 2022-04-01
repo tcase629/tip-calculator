@@ -65,14 +65,25 @@ body {
   color: hsl(183, 100%, 15%);
 }
 
-input::placeholder {
+.input_wrap input::placeholder {
   color: hsl(184, 14%, 56%);
   opacity: 1;
 }
 
+input::placeholder {
+  color: hsl(183, 100%, 15%);
+  font-family: 'Space Mono', monospace;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 5px;
+}
+
 .btn_container {
   display: grid;
-  grid-template-columns: auto auto 100px;
+  grid-template-columns: 30% 30% 30%;
   gap: 10px;
   margin: 15px 0;
 }
@@ -85,6 +96,16 @@ input::placeholder {
   border: none;
   border-radius: 5px;
 }
+
+.custom_btn {
+  text-align: center;
+  font-size: 18px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  color: hsl(183, 100%, 15%);
+}
+
+
 
 .output {
   background-color: hsl(183, 100%, 15%);
