@@ -4,7 +4,7 @@ const CustomButton = ({ tip, setTip }) => {
       type="number" 
       placeholder="Custom" 
       className="custom_btn" 
-      value={tip}
+      value={tip || 'Custom'}
       onChange={(e) => setTip(e.target.value)}
     />
   )

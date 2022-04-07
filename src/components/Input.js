@@ -14,7 +14,7 @@ const Input = ({ bill, setBill, tip, setTip, people, setPeople, setReset }) => {
           <input
             type="number" 
             placeholder="0"
-            value={bill}
+            value={bill || ''}
             autoComplete="off"
             onChange={(e) => setBill(e.target.value)}
           />
@@ -37,7 +37,7 @@ const Input = ({ bill, setBill, tip, setTip, people, setPeople, setReset }) => {
           <input
             type="number" 
             placeholder="0"
-            value={people}
+            value={people || ''}
             autoComplete="off"
             onChange={(e) => setPeople(e.target.value)}
           />
