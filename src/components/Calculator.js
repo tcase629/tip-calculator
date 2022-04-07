@@ -5,13 +5,13 @@ import Output from './Output'
 const Calculator = () => {
   const [bill, setBill] = useState(0)
   const [tip, setTip] = useState(0)
-  const [people, setPeople] = useState(0)
+  const [people, setPeople] = useState(1)
   const [reset, setReset] = useState(false)
 
   const onReset = () => {
     if (reset) {
       setBill(0)
-      setPeople(0)
+      setPeople(1)
       setTip(0)
       setReset(false)
     }
