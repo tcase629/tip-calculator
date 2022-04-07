@@ -2,7 +2,7 @@ import money from '../images/icon-dollar.svg'
 import person from '../images/icon-person.svg'
 import TipButtons from './TipButtons'
 
-const Input = () => {
+const Input = ({ bill, setBill, tip, setTip, people, setPeople, setReset }) => {
   return (
     <div className="input">
       <div className="bill">
@@ -11,11 +11,12 @@ const Input = () => {
         </div>
         <div className="input_wrap">
           <img src={money} alt="" />
-          <input 
-            className="input_text"
-            name="bill"
-            type="text" 
+          <input
+            type="number" 
             placeholder="0"
+            value={bill}
+            autoComplete="off"
+            onChange={(e) => setBill(e.target.value)}
           />
         </div>
       </div>
@@ -24,7 +25,7 @@ const Input = () => {
           <label>Select Tip %</label>
         </div>
         <div className="button_container">
-          <TipButtons />
+          <TipButtons tip={tip} setTip={setTip} setRest={setReset} />
         </div>
       </div>
       <div className="people">
@@ -33,11 +34,12 @@ const Input = () => {
         </div>
         <div className="input_wrap">
           <img src={person} alt="" />
-          <input 
-            className="input_text"
-            name="people"
-            type="text" 
+          <input
+            type="number" 
             placeholder="0"
+            value={people}
+            autoComplete="off"
+            onChange={(e) => setPeople(e.target.value)}
           />
         </div>
       </div>

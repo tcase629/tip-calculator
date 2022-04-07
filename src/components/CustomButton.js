@@ -1,6 +1,12 @@
-const CustomButton = () => {
+const CustomButton = ({ tip, setTip }) => {
   return (
-    <input type="text" placeholder="Custom" className="custom_btn" />
+    <input 
+      type="number" 
+      placeholder="Custom" 
+      className="custom_btn" 
+      value={tip}
+      onChange={(e) => setTip(e.target.value)}
+    />
   )
 }
 
